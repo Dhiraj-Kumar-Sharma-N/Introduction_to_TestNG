@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="WebsiteUrl" value="HDFC BANKING.COM"/>
+  <test name="VehicleLoan Enquiry(failed)">
+    <parameter name="Url" value="HDFC VehicleLoan.COM"/>
+    <classes>
+      <class name="TestngXML_Package.Login">
+        <methods>
+          <include name="ParameterTest"/>
+          <include name="BeforeTestMethod"/>
+          <include name="AfterTestMethod"/>
+        </methods>
+      </class> <!-- TestngXML_Package.Login -->
+      <class name="TestngXML_Package.VehicleLoan">
+        <methods>
+          <include name="ParameterTest"/>
+          <include name="beforemethod"/>
+          <include name="Aftermethod"/>
+        </methods>
+      </class> <!-- TestngXML_Package.VehicleLoan -->
+    </classes>
+  </test> <!-- VehicleLoan Enquiry(failed) -->
+  <test name="HomeLoan Enquiry(failed)">
+    <parameter name="Url" value="HDFC HomeLoan.COM"/>
+    <classes>
+      <class name="TestngXML_Package.Login">
+        <methods>
+          <include name="ParameterTest"/>
+          <include name="BeforeTestMethod"/>
+          <include name="AfterTestMethod"/>
+        </methods>
+      </class> <!-- TestngXML_Package.Login -->
+      <class name="TestngXML_Package.HomeLoan">
+        <methods>
+          <include name="beforeclassmethod"/>
+          <include name="ParameterTest"/>
+          <include name="afterClassmethod"/>
+        </methods>
+      </class> <!-- TestngXML_Package.HomeLoan -->
+    </classes>
+  </test> <!-- HomeLoan Enquiry(failed) -->
+</suite> <!-- Failed suite [Suite] -->

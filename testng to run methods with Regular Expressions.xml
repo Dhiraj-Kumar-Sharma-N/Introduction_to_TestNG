@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">  
+ 
+     <classes>
+    
+    	 <class name="TestngXML_Package.Login">
+    	 
+    	<methods>
+    	
+    	<exclude name="Mobile.*"></exclude>
+    	
+    	</methods>
+    		
+    	</class>
+    	 
+      <class name="TestngXML_Package.HomeLoan"/>
+            
+      <class name="TestngXML_Package.Logout">
+      
+      <methods>
+    	
+    	<include name="API.*"></include>
+    	
+    	</methods>
+      
+      </class>
+      
+    </classes>
+    
+    
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+
+
+
+
+
+<!--        +++++++++++++++  OUTPUT +++++++++++++++++++++
+
+[RemoteTestNG] detected TestNG version 6.11.0
+BeforeSuite Method executed prior to first test Successful 
+BeforeTest Method executed prior to first test Successful and is scoped within the test folder of XML 
+API LogIn Successful 
+Web LogIn Successful 
+Before class method executed successfully and is scoped within the class  in which it is specified 
+API Home loan clicked  Successful 
+Mobile Home Loan clicked  Successful 
+Web  Home Loan clicked  Successful 
+After class method executed successfully and is scoped within the class  in which it is specified 
+API Logout Successful 
+AfterTest Method executed post to all test Successful and is scoped within the test folder of XML 
+AfterSuite Method executed post to all test Successful 
+
+===============================================
+Suite
+Total tests run: 6, Failures: 0, Skips: 0
+===============================================
+
+ -->

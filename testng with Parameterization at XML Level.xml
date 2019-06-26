@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<parameter name="WebsiteURL" value="www.doubleclick.com"></parameter>
+
+  <test thread-count="5" name="HomeLoan Enquiry ">
+  
+  <parameter name="HomeLoanURL" value="www.homeloan.com"></parameter>
+  
+  <parameter name="UserName" value="DHIRAJ KUMAR"></parameter>
+  
+  <parameter name="Password" value="123456789"></parameter>
+  
+    <classes>
+      
+      <class name="TestngXML_Package.Login"/>
+      
+      <class name="TestngXML_Package.HomeLoan"/>
+      
+      <class name="TestngXML_Package.Logout"/>
+  
+      
+    </classes>
+    
+  </test> <!-- Test -->
+
+<test thread-count="5" name="Test">
+  
+  <parameter name="VehicleLoanURL" value="www.VehicleLoan.com"></parameter>
+  
+    <classes>
+      
+      <class name="TestngXML_Package.Login"/>
+      
+    <class name="TestngXML_Package.VehicleLoan"/>
+      
+      <class name="TestngXML_Package.Logout"/>
+  
+      
+    </classes>
+    
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
+
+
+
+<!--  				+++++ 	OUTPUT ++++++++++++++
+
+[RemoteTestNG] detected TestNG version 6.11.0
+BeforeSuite Method executed prior to first test Successful 
+BeforeTest Method executed prior to first test Successful and is scoped within the test folder of XML 
+API LogIn Successful 
+Mobile LogIn Successful 
+Mobile SignIn Successful 
+www.doubleclick.com
+Web LogIn Successful 
+Before class method executed successfully and is scoped within the class  in which it is specified 
+API Home loan clicked  Successful 
+Mobile Home Loan clicked  Successful 
+www.homeloan.com
+DHIRAJ KUMAR
+123456789
+Web  Home Loan clicked  Successful 
+After class method executed successfully and is scoped within the class  in which it is specified 
+API Logout Successful 
+Mobile Logout Successful 
+Mobile SignOut Successful 
+Web Logout Successful 
+AfterTest Method executed post to all test Successful and is scoped within the test folder of XML 
+BeforeTest Method executed prior to first test Successful and is scoped within the test folder of XML 
+API LogIn Successful 
+Mobile LogIn Successful 
+Mobile SignIn Successful 
+www.doubleclick.com
+Web LogIn Successful 
+Before method executed successfully and is executed before every test in the class in which it is specified 
+Mobile Vehicle Loan clicked  Successful 
+After method executed successfully and is executed after every test in the class in which it is specified 
+Before method executed successfully and is executed before every test in the class in which it is specified 
+www.VehicleLoan.com
+After method executed successfully and is executed after every test in the class in which it is specified 
+Before method executed successfully and is executed before every test in the class in which it is specified 
+Web  Vehicle Loan clicked  Successful 
+After method executed successfully and is executed after every test in the class in which it is specified 
+Before method executed successfully and is executed before every test in the class in which it is specified 
+DummyMethod clicked  Successful 
+After method executed successfully and is executed after every test in the class in which it is specified 
+Before method executed successfully and is executed before every test in the class in which it is specified 
+API Vehicle loan clicked  Successful 
+After method executed successfully and is executed after every test in the class in which it is specified 
+API Logout Successful 
+Mobile Logout Successful 
+Mobile SignOut Successful 
+Web Logout Successful 
+AfterTest Method executed post to all test Successful and is scoped within the test folder of XML 
+AfterSuite Method executed post to all test Successful 
+
+===============================================
+Suite
+Total tests run: 27, Failures: 0, Skips: 0
+===============================================
+
+
+ -->

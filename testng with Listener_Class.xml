@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+
+<listener class-name="TestngXML_Package.ListenerClass"></listener>
+
+</listeners>
+  <test thread-count="5" name="Test">
+    <classes>
+
+      <class name="TestngXML_Package.Logout"/>
+     
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+
+
+<!--        +++++++++++++++  OUTPUT +++++++++++++++++++++
+
+[RemoteTestNG] detected TestNG version 6.11.0
+BeforeSuite Method executed prior to first test Successful 
+Test Started Successfully 
+Test Cases Started  Successfully 
+API Logout Successful 
+Successfully Testing  
+Test Cases Started  Successfully 
+Mobile Logout Successful 
+													Test Cases Failed MobileLogout
+The method name that failed is : MobileLogout
+Test Cases Started  Successfully 
+Mobile SignOut Successful 
+Successfully Testing  
+Test Cases Started  Successfully 
+Web Logout Successful 
+Successfully Testing  
+Test Cases Executed Successfully 
+AfterSuite Method executed post to all test Successful 
+
+===============================================
+Suite
+Total tests run: 4, Failures: 1, Skips: 0
+===============================================
+
+===============================================
+Suite
+Total tests run: 6, Failures: 0, Skips: 0
+===============================================
+
+ -->

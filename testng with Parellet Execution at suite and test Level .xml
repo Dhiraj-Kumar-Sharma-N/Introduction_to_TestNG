@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="5">
+
+<listeners>
+
+<listener class-name="TestngXML_Package.ListenerClass"></listener>
+
+
+</listeners>
+  <test thread-count="5" name="VehicleLoan Enquiry" parallel="classes">
+ 
+     <classes>
+        	 
+            
+      <class name="TestngXML_Package.Logout">
+      
+      <methods>
+    	
+    	<include name="WebLogout"></include>
+    	
+    	</methods>
+      
+      </class>
+      
+    </classes>
+      
+  </test> <!-- Test -->
+  
+    <test thread-count="5" name="HomeLoan Enquiry">
+ 
+     <classes >
+    
+    	 <class name="TestngXML_Package.Login" >
+    	 
+    	<methods>
+    	
+    	<exclude name="ParameterTest"></exclude>
+    	
+    	</methods>
+    		
+      </class>
+      
+    </classes>
+    
+    
+  </test>
+</suite> <!-- Suite -->
+
+
+
+<!--		+++++++   OUTPUT    ++++++++++
+
+[RemoteTestNG] detected TestNG version 6.11.0
+BeforeSuite Method executed prior to first test Successful 
+Test Started Successfully 
+BeforeTest Method executed prior to first test Successful and is scoped within the test folder of XML 
+Test Started Successfully 
+Test Cases Started  Successfully 
+Web Logout Successful 
+Test Cases Started  Successfully 
+API LogIn Successful 
+Successfully Testing  
+Successfully Testing  
+Test Cases Started  Successfully 
+Mobile LogIn Successful 
+Successfully Testing  
+Test Cases Started  Successfully 
+Mobile SignIn Successful 
+Successfully Testing  
+Test Cases Started  Successfully 
+Web LogIn Successful 
+Successfully Testing  
+AfterTest Method executed post to all test Successful and is scoped within the test folder of XML 
+Test Cases Executed Successfully 
+Test Cases Executed Successfully 
+AfterSuite Method executed post to all test Successful 
+
+===============================================
+Suite
+Total tests run: 5, Failures: 0, Skips: 0
+===============================================
+
+ -->

@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="4" ignored="8" total="27" passed="15">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="446" started-at="2019-03-30T04:49:59Z" finished-at="2019-03-30T04:49:59Z">
+    <groups>
+      <group name="SmokeTC">
+        <method signature="VehicleLoan.MobileVehicleLoan()[pri:0, instance:TestngXML_Package.VehicleLoan@7ca48474]" name="MobileVehicleLoan" class="TestngXML_Package.VehicleLoan"/>
+        <method signature="Login.MobileLogIn()[pri:0, instance:TestngXML_Package.Login@13a57a3b]" name="MobileLogIn" class="TestngXML_Package.Login"/>
+        <method signature="HomeLoan.MobileHomeLoan()[pri:0, instance:TestngXML_Package.HomeLoan@4439f31e]" name="MobileHomeLoan" class="TestngXML_Package.HomeLoan"/>
+        <method signature="Login.MobileLogIn()[pri:0, instance:TestngXML_Package.Login@215be6bb]" name="MobileLogIn" class="TestngXML_Package.Login"/>
+      </group> <!-- SmokeTC -->
+    </groups>
+    <test name="VehicleLoan Enquiry" duration-ms="153" started-at="2019-03-30T04:49:59Z" finished-at="2019-03-30T04:49:59Z">
+      <class name="TestngXML_Package.Logout">
+        <test-method status="PASS" signature="WebLogout()[pri:0, instance:TestngXML_Package.Logout@69d9c55]" name="WebLogout" duration-ms="2" started-at="2019-03-30T10:19:59Z" finished-at="2019-03-30T10:19:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebLogout -->
+      </class> <!-- TestngXML_Package.Logout -->
+      <class name="TestngXML_Package.VehicleLoan">
+        <test-method status="PASS" signature="beforemethod()[pri:0, instance:TestngXML_Package.VehicleLoan@7ca48474]" name="beforemethod" is-config="true" duration-ms="0" started-at="2019-03-30T10:19:59Z" finished-at="2019-03-30T10:19:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method status="PASS" signature="MobileVehicleLoan()[pri:0, instance:TestngXML_Package.VehicleLoan@7ca48474]" name="MobileVehicleLoan" duration-ms="2" started-at="2019-03-30T10:19:59Z" finished-at="2019-03-30T10:19:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileVehicleLoan -->
+        <test-method status="PASS" signature="Aftermethod()[pri:0, instance:TestngXML_Package.VehicleLoan@7ca48474]" name="Aftermethod" is-config="true" duration-ms="1" started-at="2019-03-30T10:19:59Z" finished-at="2019-03-30T10:19:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aftermethod -->
+        <test-method status="FAIL" signature="ParameterTest(java.lang.String)[pri:0, instance:TestngXML_Package.VehicleLoan@7ca48474]" name="ParameterTest" duration-ms="0" started-at="2019-03-30T10:19:59Z" finished-at="2019-03-30T10:19:59Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'VehicleLoanURL' is required by @Test on method ParameterTest but has not been marked @Optional or defined
+in C:\Users\dsharman2\Sample-workspace\Introduction_to_TestNG\testng to Paramaterize through XML File.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'VehicleLoanURL' is required by @Test on method ParameterTest but has not been marked @Optional or defined
+in C:\Users\dsharman2\Sample-workspace\Introduction_to_TestNG\testng to Paramaterize through XML File.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:569)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1308)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1036)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1126)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ParameterTest -->
+        <test-method status="PASS" signature="WebVehicleLoan()[pri:0, instance:TestngXML_Package.VehicleLoan@7ca48474]" name="WebVehicleLoan" duration-ms="2" started-at="2019-03-30T10:19:59Z" finished-at="2019-03-30T10:19:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebVehicleLoan -->
+        <test-method status="PASS" signature="beforemethod()[pri:0, instance:TestngXML_Package.VehicleLoan@7ca48474]" name="beforemethod" is-config="true" duration-ms="0" started-at="2019-03-30T10:19:59Z" finished-at="2019-03-30T10:19:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method status="PASS" signature="Aftermethod()[pri:0, instance:TestngXML_Package.VehicleLoan@7ca48474]" name="Aftermethod" is-config="true" duration-ms="0" started-at="2019-03-30T10:19:59Z" finished-at="2019-03-30T10:19:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aftermethod -->
+        <test-method status="PASS" signature="beforemethod()[pri:0, instance:TestngXML_Package.VehicleLoan@7ca48474]" name="beforemethod" is-config="true" duration-ms="1" started-at="2019-03-30T10:19:59Z" finished-at="2019-03-30T10:19:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method status="PASS" signature="DummyMethod()[pri:0, instance:TestngXML_Package.VehicleLoan@7ca48474]" name="DummyMethod" duration-ms="39" started-at="2019-03-30T10:19:59Z" finished-at="2019-03-30T10:19:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DummyMethod -->
+        <test-method status="PASS" signature="Aftermethod()[pri:0, instance:TestngXML_Package.VehicleLoan@7ca48474]" name="Aftermethod" is-config="true" duration-ms="0" started-at="2019-03-30T10:19:59Z" finished-at="2019-03-30T10:19:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aftermethod -->
+        <test-method status="PASS" signature="beforemethod()[pri:0, instance:TestngXML_Package.VehicleLoan@7ca48474]" name="beforemethod" is-config="true" duration-ms="0" started-at="2019-03-30T10:19:59Z" finished-at="2019-03-30T10:19:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method status="PASS" signature="APIVehicleLoan()[pri:0, instance:TestngXML_Package.VehicleLoan@7ca48474]" name="APIVehicleLoan" duration-ms="2" started-at="2019-03-30T10:19:59Z" depends-on-methods="TestngXML_Package.VehicleLoan.MobileVehicleLoan, TestngXML_Package.VehicleLoan.WebVehicleLoan" finished-at="2019-03-30T10:19:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- APIVehicleLoan -->
+        <test-method status="PASS" signature="Aftermethod()[pri:0, instance:TestngXML_Package.VehicleLoan@7ca48474]" name="Aftermethod" is-config="true" duration-ms="0" started-at="2019-03-30T10:19:59Z" finished-at="2019-03-30T10:19:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aftermethod -->
+      </class> <!-- TestngXML_Package.VehicleLoan -->
+      <class name="TestngXML_Package.Login">
+        <test-method status="PASS" signature="BeforeTestMethod()[pri:0, instance:TestngXML_Package.Login@13a57a3b]" name="BeforeTestMethod" is-config="true" duration-ms="1" started-at="2019-03-30T10:19:59Z" finished-at="2019-03-30T10:19:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeTestMethod -->
+        <test-method status="PASS" signature="APILogIn()[pri:0, instance:TestngXML_Package.Login@13a57a3b]" name="APILogIn" duration-ms="10" started-at="2019-03-30T10:19:59Z" finished-at="2019-03-30T10:19:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- APILogIn -->
+        <test-method status="PASS" signature="MobileLogIn()[pri:0, instance:TestngXML_Package.Login@13a57a3b]" name="MobileLogIn" duration-ms="3" started-at="2019-03-30T10:19:59Z" finished-at="2019-03-30T10:19:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileLogIn -->
+        <test-method status="FAIL" signature="ParameterTest(java.lang.String)[pri:0, instance:TestngXML_Package.Login@13a57a3b]" name="ParameterTest" duration-ms="0" started-at="2019-03-30T10:19:59Z" finished-at="2019-03-30T10:19:59Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'WebsiteURL' is required by @Test on method ParameterTest but has not been marked @Optional or defined
+in C:\Users\dsharman2\Sample-workspace\Introduction_to_TestNG\testng to Paramaterize through XML File.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'WebsiteURL' is required by @Test on method ParameterTest but has not been marked @Optional or defined
+in C:\Users\dsharman2\Sample-workspace\Introduction_to_TestNG\testng to Paramaterize through XML File.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:569)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1308)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1036)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1126)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ParameterTest -->
+        <test-method status="PASS" signature="WebLogIn()[pri:0, instance:TestngXML_Package.Login@13a57a3b]" name="WebLogIn" duration-ms="3" started-at="2019-03-30T10:19:59Z" finished-at="2019-03-30T10:19:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebLogIn -->
+        <test-method status="PASS" signature="AfterTestMethod()[pri:0, instance:TestngXML_Package.Login@13a57a3b]" name="AfterTestMethod" is-config="true" duration-ms="2" started-at="2019-03-30T10:19:59Z" finished-at="2019-03-30T10:19:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTestMethod -->
+      </class> <!-- TestngXML_Package.Login -->
+    </test> <!-- VehicleLoan Enquiry -->
+    <test name="HomeLoan Enquiry" duration-ms="105" started-at="2019-03-30T04:49:59Z" finished-at="2019-03-30T04:49:59Z">
+      <class name="TestngXML_Package.HomeLoan">
+        <test-method status="PASS" signature="beforeclassmethod()[pri:0, instance:TestngXML_Package.HomeLoan@4439f31e]" name="beforeclassmethod" is-config="true" duration-ms="1" started-at="2019-03-30T10:19:59Z" finished-at="2019-03-30T10:19:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeclassmethod -->
+        <test-method status="PASS" signature="APIHomeLoan()[pri:0, instance:TestngXML_Package.HomeLoan@4439f31e]" name="APIHomeLoan" duration-ms="3" started-at="2019-03-30T10:19:59Z" finished-at="2019-03-30T10:19:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- APIHomeLoan -->
+        <test-method status="PASS" signature="MobileHomeLoan()[pri:0, instance:TestngXML_Package.HomeLoan@4439f31e]" name="MobileHomeLoan" duration-ms="2" started-at="2019-03-30T10:19:59Z" finished-at="2019-03-30T10:19:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileHomeLoan -->
+        <test-method status="FAIL" signature="ParameterTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestngXML_Package.HomeLoan@4439f31e]" name="ParameterTest" duration-ms="0" started-at="2019-03-30T10:19:59Z" finished-at="2019-03-30T10:19:59Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'HomeLoanURL' is required by @Test on method ParameterTest but has not been marked @Optional or defined
+in C:\Users\dsharman2\Sample-workspace\Introduction_to_TestNG\testng to Paramaterize through XML File.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'HomeLoanURL' is required by @Test on method ParameterTest but has not been marked @Optional or defined
+in C:\Users\dsharman2\Sample-workspace\Introduction_to_TestNG\testng to Paramaterize through XML File.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:569)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1308)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1036)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1126)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ParameterTest -->
+        <test-method status="PASS" signature="WebPersonalLoan()[pri:0, instance:TestngXML_Package.HomeLoan@4439f31e]" name="WebPersonalLoan" duration-ms="4" started-at="2019-03-30T10:19:59Z" finished-at="2019-03-30T10:19:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebPersonalLoan -->
+        <test-method status="PASS" signature="afterClassmethod()[pri:0, instance:TestngXML_Package.HomeLoan@4439f31e]" name="afterClassmethod" is-config="true" duration-ms="1" started-at="2019-03-30T10:19:59Z" finished-at="2019-03-30T10:19:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClassmethod -->
+      </class> <!-- TestngXML_Package.HomeLoan -->
+      <class name="TestngXML_Package.Logout">
+        <test-method status="PASS" signature="BeforeSuiteMethod()[pri:0, instance:TestngXML_Package.Logout@32d992b2]" name="BeforeSuiteMethod" is-config="true" duration-ms="24" started-at="2019-03-30T10:19:59Z" finished-at="2019-03-30T10:19:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeSuiteMethod -->
+        <test-method status="PASS" signature="WebLogout()[pri:0, instance:TestngXML_Package.Logout@32d992b2]" name="WebLogout" duration-ms="12" started-at="2019-03-30T10:19:59Z" finished-at="2019-03-30T10:19:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebLogout -->
+        <test-method status="PASS" signature="AfterSuiteMethod()[pri:0, instance:TestngXML_Package.Logout@32d992b2]" name="AfterSuiteMethod" is-config="true" duration-ms="1" started-at="2019-03-30T10:19:59Z" finished-at="2019-03-30T10:19:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterSuiteMethod -->
+      </class> <!-- TestngXML_Package.Logout -->
+      <class name="TestngXML_Package.Login">
+        <test-method status="PASS" signature="BeforeTestMethod()[pri:0, instance:TestngXML_Package.Login@215be6bb]" name="BeforeTestMethod" is-config="true" duration-ms="0" started-at="2019-03-30T10:19:59Z" finished-at="2019-03-30T10:19:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeTestMethod -->
+        <test-method status="PASS" signature="APILogIn()[pri:0, instance:TestngXML_Package.Login@215be6bb]" name="APILogIn" duration-ms="2" started-at="2019-03-30T10:19:59Z" finished-at="2019-03-30T10:19:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- APILogIn -->
+        <test-method status="PASS" signature="MobileLogIn()[pri:0, instance:TestngXML_Package.Login@215be6bb]" name="MobileLogIn" duration-ms="3" started-at="2019-03-30T10:19:59Z" finished-at="2019-03-30T10:19:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileLogIn -->
+        <test-method status="FAIL" signature="ParameterTest(java.lang.String)[pri:0, instance:TestngXML_Package.Login@215be6bb]" name="ParameterTest" duration-ms="0" started-at="2019-03-30T10:19:59Z" finished-at="2019-03-30T10:19:59Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'WebsiteURL' is required by @Test on method ParameterTest but has not been marked @Optional or defined
+in C:\Users\dsharman2\Sample-workspace\Introduction_to_TestNG\testng to Paramaterize through XML File.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'WebsiteURL' is required by @Test on method ParameterTest but has not been marked @Optional or defined
+in C:\Users\dsharman2\Sample-workspace\Introduction_to_TestNG\testng to Paramaterize through XML File.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:569)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1308)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1036)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1126)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ParameterTest -->
+        <test-method status="PASS" signature="WebLogIn()[pri:0, instance:TestngXML_Package.Login@215be6bb]" name="WebLogIn" duration-ms="23" started-at="2019-03-30T10:19:59Z" finished-at="2019-03-30T10:19:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebLogIn -->
+        <test-method status="PASS" signature="AfterTestMethod()[pri:0, instance:TestngXML_Package.Login@215be6bb]" name="AfterTestMethod" is-config="true" duration-ms="0" started-at="2019-03-30T10:19:59Z" finished-at="2019-03-30T10:19:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTestMethod -->
+      </class> <!-- TestngXML_Package.Login -->
+    </test> <!-- HomeLoan Enquiry -->
+  </suite> <!-- Suite -->
+</testng-results>
